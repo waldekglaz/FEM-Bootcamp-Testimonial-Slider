@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.card .card-image {
+  position: relative;
+  background-image: url(../images/pattern-bg.svg);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  padding: 1px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card .card-image .main-img {
+  width: 70%;
+  display: block;
+  margin: 50px auto 50px;
+}
+
+.card .card-btn {
+  background-color: white;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  cursor: pointer;
+}
+
+.card .card-btn img {
+  background-color: white;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.card .card-text {
+  text-align: center;
+  line-height: 1.4;
+  padding: 30px 50px 20px;
+  font-size: 18px;
+  background-image: url(../images/pattern-quotes.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 70px;
+}
+
+.card .text-author {
+  text-align: center;
+  padding: 40px;
+  font-weight: 700;
+  background-image: url(../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card .text-author .author-role {
+  color: rgba(128, 128, 128, 0.3);
+}
+/*# sourceMappingURL=style.css.map */
