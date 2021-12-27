@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-    <link rel="stylesheet" href="sass/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
 
-  <body>
-    <div class="card">
-      <div class="card-image">
-        <img class="main-img" src="images/image-tanya.jpg" alt="" />
-        <div class="card-btn">
-          <img src="images/icon-prev.svg" alt="" class="prevBtn" />
-          <img src="images/icon-next.svg" alt="" class="nextBtn" />
+</head>
+
+<body>
+  <main class="container">
+    <div class="image-slider">
+      <div class="img-and-buttons-wrapper">
+        <img src="images/image-tanya.jpg" alt="Tanya Sinclair" class="image-slider__image">
+
+        <div class="image-slider__buttons">
+          <button class="btn prev"><img src="images/icon-prev.svg" alt="" class="btn__icon"></button>
+          <button class="btn next"><img src="images/icon-next.svg" alt="" class="btn__icon"></button>
         </div>
       </div>
 
-      <div class="card-text">
-        “ I’ve been interested in coding for a while but never taken the jump,
-        until now. I couldn’t recommend this course enough. I’m now in the job
-        of my dreams and so excited about the future. ”
-      </div>
-      <div class="text-author">
-        <div class="author-name">Tanya Sinclair</div>
-        <div class="author-role">UX Engineer</div>
-      </div>
     </div>
+    <figure class="testimonial">
+      <blockquote class="testimonial__quote">
+        “ I’ve been interested in coding for a while but never taken the jump, until now.
+        I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+        excited about the future. ”
+      </blockquote>
+      <figcaption class="testimonial__name">Tanya Sinclair</figcaption>
+      <span class="testimonial__role">UX Engineer</span>
+    </figure>
+  </main>
 
-    <!-- “ If you want to lay the best foundation possible I’d recommend taking this course.
+
+
+
+
+
+  <!-- “ If you want to lay the best foundation possible I’d recommend taking this course.
   The depth the instructors go into is incredible. I now feel so confident about
   starting up as a professional developer. ”
 
   John Tarkpor
   Junior Front-end Developer -->
+  <script src="script/card.js"></script>
+</body>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
-    <script src="script/card.js"></script>
-  </body>
 </html>

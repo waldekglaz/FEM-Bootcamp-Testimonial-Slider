@@ -1,0 +1,133 @@
+@import "base/reset";
+@import "base/typography";
+@import "base/colors";
+
+.container {
+  padding: 24px;
+  color: $clr-darkBlue;
+  font-family: $font-main;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}
+.img-and-buttons-wrapper {
+  position: relative;
+}
+.image-slider {
+  background-image: url("../images/pattern-bg.svg"),
+    url("../images/pattern-curve.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: center;
+  margin-bottom: 54px;
+  min-height: 308px;
+  position: relative;
+}
+.image-slider__image {
+  width: 254px;
+  height: 254px;
+  margin-top: 30px;
+}
+.image-slider__buttons {
+  position: absolute;
+  left: 50%;
+  bottom: -19px;
+  transform: translateX(-50%);
+  border-radius: 28px;
+  width: 84px;
+  background-color: #fff;
+}
+.btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #fff;
+  border-color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn__icon {
+  width: 6px;
+  height: 11px;
+}
+.testimonial {
+  background-image: url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 60px 50px;
+}
+.testimonial__quote {
+  line-height: 24px;
+  margin-bottom: 19px;
+}
+.testimonial__name {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+.testimonial__role {
+  font-size: 15px;
+  color: $clr-grayBlue;
+}
+@media (min-width: 768px) {
+  .container {
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 78px 98px;
+    font-size: 28px;
+  }
+  .image-slider__image {
+    width: 380px;
+    height: 380px;
+    margin-top: 0;
+  }
+  .testimonial {
+    order: -1;
+    flex-basis: 635px;
+    margin-right: -40px;
+    z-index: 3;
+  }
+  .testimonial__quote {
+    line-height: 34px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+    padding: 113px 164px;
+    font-size: 32px;
+  }
+
+  .image-slider__image {
+    width: 540px;
+    height: 540px;
+    margin-top: 0;
+  }
+  .testimonial {
+    margin-right: -70px;
+  }
+  .testimonial__quote {
+    line-height: 44px;
+  }
+  .image-slider {
+    min-height: 632px;
+    min-width: 632px;
+  }
+  .image-slider__buttons {
+    left: 132px;
+    bottom: -16px;
+    transform: translateX(-62px);
+    border-radius: 28px;
+    width: 112px;
+    background-color: #fff;
+  }
+}
