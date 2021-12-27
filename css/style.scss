@@ -48,8 +48,8 @@
   cursor: pointer;
 }
 .btn__icon {
-  width: 6px;
-  height: 11px;
+  width: 8px;
+  height: 13px;
 }
 .testimonial {
   background-image: url("../images/pattern-quotes.svg");
@@ -97,6 +97,10 @@
   }
   .testimonial__quote {
     line-height: 34px;
+  }
+  .btn__icon {
+    width: 11px;
+    height: 16px;
   }
 }
 @media (min-width: 1440px) {
